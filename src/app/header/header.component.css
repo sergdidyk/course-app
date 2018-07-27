@@ -2,3 +2,7 @@
     background-color:#FFF5EE;
     border-bottom: 1px solid #D1D0CE;
 }
+
+.dropdown-item, .dropdown-toggle{
+    cursor: pointer;
+}
