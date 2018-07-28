@@ -1,6 +1,6 @@
 //place where I manage the recipes
 
-import { EventEmitter, Injectable } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Recipe } from "./recipe.model";
 import { Ingredient } from "../shared/ingredient.model";
 import { ShoppingListService } from "../shopping-list/shopping-list.service";
@@ -8,10 +8,7 @@ import { ShoppingListService } from "../shopping-list/shopping-list.service";
 @Injectable()
 
 export class RecipeService {
-    //public property
-    recipeSelected = new EventEmitter<Recipe>();
-
-    //private - can't access this property outside
+    
     private recipes: Recipe[] = [  
         new Recipe(
             'Burger Recipe', 
